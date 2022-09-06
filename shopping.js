@@ -6,7 +6,6 @@
 // - modify Tea to 'Green Tea'
 
 const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
-"Tea" = "Greeen tea"
 shoppingCart.unshift("Meat")
 shoppingCart.pop()
 shoppingCart.push("Sugar")

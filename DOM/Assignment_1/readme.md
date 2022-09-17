@@ -2,7 +2,9 @@
 
 ## Input 
 
-![INPUT](/home/abhishek/Desktop/Javascript-/DOM/Assignment_1/Pic1.png)
+![INPUT](/DOM/Assignment_1/Pic1.png)
 
-![OUTPUT](DOM/Assignment_1/Pic1.png)
+## I have to change the heading using dom
+
+![OUTPUT](/DOM/Assignment_1/1.png)
 

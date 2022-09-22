@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+        }
+        label{
+            font-size: 22px;
+            /* margin-top: 18px; */
+            
+        }
+        #confPassword{
+            padding: 8px;
+            margin-top: 8px;
+        }
+        #password{
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        #email{
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        #username{
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+      
+        #button{
+            margin-top: 12px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: cyan;
+            border: 1px solid cyan;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <label for="name">Email : </label>
+   
+</br>
+<input type="email" required placeholder="Enter your email" id="email">
+<span id="emailError"></span>
+</br>
+
+<label for="name">Username : </label>
+</br>
+
+<input type="text" required placeholder="Enter your Username" id="username"> 
+<span id="userError"></span>
+</br>
+<label for="name">Password : </label>
+</br>
+
+<input type="password" required placeholder="Enter your Password" id="password">
+<span id="passError"></span>
+ </br>
+<label for="name">Confirm Password : </label> </br>
+
+ <input type="password" required placeholder="Enter your Confirm Password" id="confPassword">
+ <span id="confError"></span>
+</br>
+<button  id="button" onclick="btn()">Signup</button>
+<p id="notMatch"></p>
+   </div>
+   
+
+    <script>
+        function btn(){
+            let email = document.getElementById('email')
+            let username = document.getElementById('username')
+            let password = document.getElementById('password')
+            let confPassword = document.getElementById('confPassword')
+
+            if(email.value == ""){
+                let emailError  = document.getElementById('emailError')
+                emailError.innerHTML = "Email is empty"
+                emailError.style.color = "red"
+            }
+            else{
+                let emailError  = document.getElementById('emailError')
+                emailError.innerHTML = ""
+            }
+            if(username.value == ""){
+                let userError  = document.getElementById('userError')
+                userError.innerHTML = "Username is empty"
+                userError.style.color = "red"
+            }
+            else{
+                let userError  = document.getElementById('userError')
+                userError.innerHTML = ""
+            }
+            if(password.value == ""){
+                let passError  = document.getElementById('passError')
+                passError.innerHTML = "Password is empty"
+                passError.style.color = "red"
+            }
+            else{
+                let passError  = document.getElementById('passError')
+                passError.innerHTML = ""
+            }
+            if(confPassword.value == ""){
+                let confError  = document.getElementById('confError')
+                confError.innerHTML = "Confirm Password is empty"
+                confError.style.color = "red"
+            }
+            else{
+                let confError  = document.getElementById('confError')
+                confError.innerHTML = ""
+            }
+            if(password.value!=confPassword.value){
+               let match = document.getElementById('notMatch')
+               match.innerHTML = "Password does not match"
+               match.style.color = "red"
+            }
+            else if(password.value === confPassword.value){
+                let match = document.getElementById('notMatch')
+                 match.innerHTML = ""
+                 match.style.color = "red"
+            }
+          
+            email.value = "";
+            username.value = ""
+            password.value = ""
+            confPassword.value= ""
+
+        
+    
+        }
+
+       
+
+    </script>
+</body>
+</html>

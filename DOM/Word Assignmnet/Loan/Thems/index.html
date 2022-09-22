@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #light{
+            color: blue;
+            border: 1px solid cornflowerblue;
+            padding: 9px;
+            padding-right: 20px;
+            padding-left: 20px;
+           border-radius: 5px;
+           margin: 5px;
+
+        }
+        #dark{
+            color: blue;
+            border: 1px solid cornflowerblue;
+            padding: 9px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 5px;
+            margin: 5px;
+            
+        }
+        #body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-color: darkcyan;
+        
+        }
+    </style>
+</head>
+<body id="body">
+
+    
+    <button id="light" onclick="light()">Light Theme</button>
+    <button id="dark" onclick="dark()">Dark Theme</button>
+
+    <script>
+       function light(){
+        let body = document.getElementById('body')
+        body.style.backgroundColor = "white"
+     
+
+       }
+       function dark(){
+        let body = document.getElementById('body')
+        body.style.backgroundColor = "black"
+
+
+       }
+    </script>
+</body>
+</html>

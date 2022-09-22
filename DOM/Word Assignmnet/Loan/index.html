@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div>
+        <label for="name">
+            Amount :
+        </label>
+    </br>
+        <input id="amount">
+    </br>
+</br>
+        <label for="name">
+            Interest Rate :
+        </label>
+    </br>
+
+        <input id="rate">
+    </br>
+</br>
+        <label for="name">
+            Month to pay :
+        </label>
+    </br>
+        <input id="emi">
+    </br>
+
+    <button onclick="calculate()">Calculate</button>
+    </div>
+    <div id="box">
+        <p>Emi to pay per Month :<span id="span1"></span> </p>
+        <p>Total you have to pay :<span id="span2"></span> </p>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

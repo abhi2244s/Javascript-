@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+label{
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+input{
+    margin-top: 10px;
+    padding: 8px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#box{
+    border: 1px solid white;
+    width: 25%;
+    height:220px;
+    margin-left: 30px;
+    text-align: center;
+}

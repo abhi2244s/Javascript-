@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: teal;
+}
+#span1{
+
+    font-size: 32px;
+}
+#span2{
+
+    font-size: 32px;
+}
+#span3{
+
+    font-size: 32px;
+}
+
+#button1{
+
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#button2{
+
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#button3{
+
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

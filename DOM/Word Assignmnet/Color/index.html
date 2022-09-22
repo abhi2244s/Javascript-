@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indecx.css">
+ 
+</head>
+<body>
+    <div>
+
+        <h2>Select the color from input box</h2>
+        <input type="color" id="input">
+    
+        <button id="button" onclick="hex()">Color</button>
+
+        <div id="box1">
+            <h2 class="h2"></h2>
+        </div>
+    </div>
+    <script>
+
+        function hex(){
+          let input = document.getElementById('input').value;
+          let h2 = document.querySelector('.h2')
+          h2.innerHTML = input;
+          input=""
+
+
+        }
+   
+    </script>
+</body>
+</html>

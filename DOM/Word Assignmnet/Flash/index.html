@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: teal;
+
+        }
+        #text{
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+           background-color: steelblue;
+           color: white;
+           font-size: 32px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <textarea id="text" cols="30" rows="10" oninput="update()"></textarea>
+
+  
+    <p id="output"></p>
+
+    <script>
+        function update(){
+        let text = document.getElementById('text').value
+         
+        let output = document.getElementById('output')
+
+        output.style.border = "1px solid cyan"
+        output.style.width = "400px"
+        output.style.height = "300px"
+        output.innerHTML = text
+       
+        output.style.borderRadius = "7px"
+        output.style.fontSize = "32px"
+        output.style.color = "white"
+   
+ 
+        }
+      
+
+    </script>
+</body>
+</html>

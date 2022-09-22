@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        img{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto mt-8">
+        <h2 class="text-center text-3xl">Music Player</h2>
+        <div class="md:grid-cols-4 gap-4 items-center grid mt-8 grid-cols-2 ">
+            <div>
+                <img src="https://sdlhivkcdnems02.cdnsrv.jio.com/c.saavncdn.com/335/Dhokha-Hindi-2022-20220210031007-500x500.jpg">
+            </br>
+            <audio id="myvideo1" >
+                <source src="/home/abhishek/Desktop/Word/music/audio/Arijit Singh - Dhokha_320(PagalWorld.com.se).mp3" type="audio/ogg">
+            </audio>
+        
+            <button onclick="play1()" class="bg-indigo-500 p-2 px-5 rounded mb-5 ">Play</button>
+            <button onclick = "pause1()" class="bg-indigo-500 p-2 px-5 rounded mb-5 mx-6">Pause</button>
+             </br>
+             <label for="name" class="pt-3">Volume features</label></br>
+            <input type="range" id="rngVolume1" min="0" max="1" step=".01" value=".5" class="mt-5">
+            </div>
+            <div>
+                <img src="/home/abhishek/Desktop/Word/music/img/level-up-ikka-250.jpg">
+            </br>
+            <audio id="myvideo2">
+                <source src="/home/abhishek/Desktop/Word/music/audio/Level Up - Ikka Ft Divine.mp3" type="audio/ogg">
+            </audio>
+        
+            <button onclick="play2()" class="bg-indigo-500 p-2 px-5 rounded mb-5 ">Play</button>
+            <button onclick = "pause2()" class="bg-indigo-500 p-2 px-5 rounded mb-5 mx-6">Pause</button>
+             </br>
+             <label for="name" class="pt-3">Volume features</label></br>
+            <input type="range" id="rngVolume2" min="0" max="1" step=".01" value=".5" class="mt-5">
+            </div>
+            <div>
+                <img src="/home/abhishek/Desktop/Word/music/img/146323-ghana-kasoota-raftaar-mp3-song-300.jpg">
+            </br>
+            <audio id="myvideo3">
+                <source src="/home/abhishek/Desktop/Word/music/audio/Ghana Kasoota - Raftaar.mp3" type="audio/ogg">
+            </audio>
+        
+            <button onclick="play3()" class="bg-indigo-500 p-2 px-5 rounded mb-5 ">Play</button>
+            <button onclick = "pause3()" class="bg-indigo-500 p-2 px-5 rounded mb-5 mx-6">Pause</button>
+             </br>
+             <label for="name" class="pt-3">Volume features</label></br>
+            <input type="range" id="rngVolume3" min="0" max="1" step=".01" value=".5" class="mt-5">
+            </div>
+            <div>
+                <img src="/home/abhishek/Desktop/Word/music/img/144960-villain-krsna-x-ikka-mp3-song-300.jpg">
+            </br>
+            <audio id="myvideo4">
+                <source src="/home/abhishek/Desktop/Word/music/audio/Villain - KRSNA X ikka.mp3" type="audio/ogg">
+            </audio>
+        
+            <button onclick="play4()" class="bg-indigo-500 p-2 px-5 rounded mb-5 ">Play</button>
+            <button onclick = "pause4()" class="bg-indigo-500 p-2 px-5 rounded mb-5 mx-6">Pause</button>
+             </br>
+             <label for="name" class="pt-3">Volume features</label></br>
+            <input type="range" id="rngVolume4" min="0" max="1" step=".01" value=".5" class="mt-5">
+            </div>
+        </div>
+    </div>
+
+ 
+    <script type="text/javascript" src="index.js">
+        
+    </script>
+</body>
+</html>

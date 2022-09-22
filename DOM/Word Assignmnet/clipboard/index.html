@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rosybrown;
+        }
+        #text{
+            height: 200px;
+            outline: thistle;
+            background-color:rgb(95, 132, 143);
+            color: white;
+            font-size: 25px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: cyan;
+            border: 1px solid cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Copy Clipboard Type here</h1>
+        <textarea id="text" cols="40" row="30"></textarea>
+    </br>
+        <button onclick="submit()">Submit Button</button>
+        <p id="para"></p>
+    </div>
+ 
+
+    <script>
+        const submit =()=>{
+            
+            let text = document.getElementById('text');
+            // if(text.value =""){
+            //     alert('in')
+            // }
+            text.focus()
+            text.select()
+            let success = document.execCommand('copy');
+            let msg = success ? 'successful' : 'unsuccessful';
+            let para = document.getElementById('para')
+            para.innerHTML = "Copy text " + msg
+            
+            
+        }
+    </script>
+</body>
+</html>

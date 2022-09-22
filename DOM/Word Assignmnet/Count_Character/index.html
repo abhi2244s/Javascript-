@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background-color: sandybrown;
+        }
+        button{
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+           background-color: turquoise;
+           border: 1px solid turquoise;
+        }
+        #input{
+            background-color: tomato;
+            outline: tomato
+           
+        }
+    </style>
+</head>
+<body>
+     <div>
+        <h1>Character type by user : <span id="span"></span></h1>
+        <textarea id="input" cols="40" rows="10"></textarea>
+     </br>
+        <button onclick="countCharacter()">Character Count</button>
+     </div>
+     <script>
+        const countCharacter = ()=>{
+            let input  = document.getElementById('input');
+            let value = input.value.length;
+            
+            let span = document.getElementById('span')
+            span.innerHTML = value;
+            span.style.color = "red";
+
+            input.value =""
+        }
+     </script>
+</body>
+</html>

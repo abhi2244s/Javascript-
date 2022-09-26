@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-color: lightslategrey;
+        }
+        div{
+            margin: 10px;
+            
+        }
+        input{
+            padding: 5px;
+        }
+        button{
+            margin-top: 10px;
+            background-color: cyan;
+            border: 1px solid cyan;
+            border-radius: 3px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-left: 20px;
+        }
+        #container{
+            background-color: thistle;
+            position: absolute;
+            display: none;
+            /* top: 10px; */
+
+          
+          
+        }
+        .fas{
+            position: absolute;
+            top: -10px;
+            left: 203px;
+        }
+    </style>
+</head>
+<body>
+    
+     <div>
+        <h2>Add income</h2>
+        <input type="text" id="income">
+         </br>
+        <button onclick="income()">Add your income</button>
+         </br>
+    
+        <button onclick="expense()">Add your expense</button>
+          </br>
+        <button onclick="budget()">Remaining Budget</button>
+        <p id="para"></p>
+     </div>
+    
+    <div id="container">
+        <div class="add-item">
+            <p>Expense of food</p>
+            <input type="text" id="food">
+            <p>Expense of Shopping</p>
+            <input type="text" id="shopping">
+            <p>Expense of Fees</p>
+            <input type="text" id="fees">
+            </br>
+            <button onclick="add()">Add</button>
+            <span class="fas"><i class="fa fa-close" style="font-size:26px" ></i></span>
+          
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

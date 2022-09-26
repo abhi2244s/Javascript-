@@ -1,0 +1,39 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input{
+    padding: 5px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+div{
+    text-align: center;
+
+    border: 1px solid red;
+    padding: 20px;
+     width: 300px;
+     height: 280px;
+     background-color: white;
+     box-shadow: -6px 0px 28px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -6px 0px 28px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -6px 0px 28px -7px rgba(0,0,0,0.75);
+}
+
+button{
+    width: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(4, 199, 199);
+    color: white;
+    font-size: 22px;
+}
+#para{
+    font-size: 25px;
+    color: teal;
+    
+}
